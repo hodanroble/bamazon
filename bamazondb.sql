@@ -1,11 +1,8 @@
-CREATE DATABASE bamazondb_products;
-SELECT * FROM bamazondb_products;
-SELECT * from products;
-SELECT * FROM bamazondb_products;
-SELECT COUNT(*), COUNT(*) FROM bamazondb_products WHERE Item_id = 10;
-SELECT item_id, product_name, stock_quantity FROM bamazondb_products;
-UPDATE products SET stock_quantity = stock_quantity = 100 WHERE item_id = 1;
-SELECT * FROM products WHERE item_id = 4;
+DROP DATABASE IF EXISTS bamazondb;
+CREATE DATABASE bamazondb;
+
+USE bamazondb;
+
 DROP TABLE IF EXISTS `products`;
 
 CREATE TABLE `products` (
@@ -34,3 +31,10 @@ INSERT INTO `products` VALUES
 (10,'Honey Red River Apples','Golden River MArket',17.89,52);
 
 UNLOCK TABLES;
+
+
+SELECT * FROM products;
+SELECT COUNT(*), COUNT(*) FROM bamazondb WHERE Item_id = 10;
+SELECT item_id, product_name, stock_quantity FROM bamazondb;
+UPDATE products SET stock_quantity = stock_quantity = 100 WHERE item_id = 1;
+SELECT * FROM products WHERE item_id = 4;

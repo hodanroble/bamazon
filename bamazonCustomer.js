@@ -8,7 +8,7 @@ require("dotenv").config();
 var dbHost = "localhost";
 var dbPort = 3306;
 var dbUser = "root";
-var dbPassword = process.env.MYSQL_PASSWORD;
+var dbPassword = "Ruwayda100!";
 var dbDatabase = "bamazondb";
 
 //connect to the DB and press the information up to then database.
