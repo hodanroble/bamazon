@@ -19,6 +19,7 @@
   "homepage": "https://github.com/hodanroble/bamazon#readme",
   "dependencies": {
     "cli-table": "^0.3.1",
+    "dotenv": "^6.0.0",
     "inquirer": "^6.0.0",
     "mysql": "^2.15.0"
   }
